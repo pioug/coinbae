@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "shippedProposals": true,
+      "targets": {
+        "electron": "1.8.3"
+      }
+    }]
+  ]
+}
