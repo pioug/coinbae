@@ -1,6 +1,6 @@
 import path from "path";
 import url from "url";
-import { app, BrowserWindow, ipcMain, Menu, nativeImage, Tray } from "electron";
+import { app, BrowserWindow, ipcMain, nativeImage, Tray } from "electron";
 
 let tray = null;
 let canvas = null;
@@ -35,6 +35,11 @@ function createCanvas() {
 
 ipcMain.on("Canvas", (event, params) => {
   const im = nativeImage.createFromDataURL(params.dataURL);
-  const i = im.crop({ x: 0, y: 0, height: im.getSize().height, width: Math.ceil(params.width) });
+  const i = im.crop({
+    x: 0,
+    y: 0,
+    height: im.getSize().height,
+    width: Math.ceil(params.width)
+  });
   tray.setImage(i.resize({ height: 32 }));
 });

@@ -52,6 +52,9 @@ function getPrice() {
       "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD&e=bitfinex"
     )
     .then(({ data: { USD } }) =>
-      USD.toLocaleString("en-US", { style: "currency", currency: "USD" }).replace('$', '')
+      USD.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+      }).replace("$", "")
     );
 }
