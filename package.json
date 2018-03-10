@@ -7,9 +7,6 @@
     "postinstall": "install-app-deps"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.40",
-    "@babel/preset-env": "7.0.0-beta.40",
-    "@babel/register": "7.0.0-beta.40",
     "babel-eslint": "8.2.2",
     "electron": "1.8.3",
     "electron-builder": "20.3.1",
@@ -18,6 +15,8 @@
   },
   "dependencies": {
     "axios": "0.18.0",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0",
     "cryptocoins-icons": "github:allienworks/cryptocoins",
     "cryptocurrency-icons": "github:cjdowner/cryptocurrency-icons#master"
   }
