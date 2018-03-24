@@ -95,7 +95,7 @@ function createPreferencesWindow() {
 }
 
 function createCanvas() {
-  canvas = new BrowserWindow({ width: 800, height: 600 });
+  canvas = new BrowserWindow({ show: !!process.env.DEBUG });
   canvas.loadURL(
     url.format({
       pathname: path.join(__dirname, "canvas.html"),
