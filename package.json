@@ -19,5 +19,12 @@
     "babel-register": "6.26.0",
     "cryptocoins-icons": "github:allienworks/cryptocoins",
     "cryptocurrency-icons": "github:cjdowner/cryptocurrency-icons#master"
+  },
+  "build": {
+    "mac": {
+      "extendInfo": {
+        "LSUIElement": 1
+      }
+    }
   }
 }
