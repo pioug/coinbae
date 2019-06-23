@@ -77,7 +77,11 @@ function createPreferencesWindow() {
     return;
   }
 
-  preferences = new BrowserWindow();
+  preferences = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
   preferences.loadURL(
     url.format({
       pathname: path.join(__dirname, "preferences.html"),
@@ -95,7 +99,12 @@ function createPreferencesWindow() {
 }
 
 function createCanvas() {
-  canvas = new BrowserWindow({ show: !!process.env.DEBUG });
+  canvas = new BrowserWindow({
+    show: !!process.env.DEBUG,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
   canvas.loadURL(
     url.format({
       pathname: path.join(__dirname, "canvas.html"),

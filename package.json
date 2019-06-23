@@ -7,16 +7,17 @@
     "postinstall": "install-app-deps"
   },
   "devDependencies": {
-    "babel-eslint": "8.2.2",
-    "electron": "1.8.3",
-    "electron-builder": "20.3.1",
-    "eslint": "4.18.2",
-    "prettier": "1.11.1"
+    "babel-eslint": "10.0.2",
+    "electron": "5.0.5",
+    "electron-builder": "20.44.4",
+    "eslint": "6.0.0",
+    "prettier": "1.18.2"
   },
   "dependencies": {
-    "axios": "0.18.0",
-    "babel-preset-env": "1.6.1",
-    "babel-register": "6.26.0",
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/register": "7.4.4",
+    "axios": "0.19.0",
     "cryptocoins-icons": "github:allienworks/cryptocoins",
     "cryptocurrency-icons": "github:cjdowner/cryptocurrency-icons#master"
   },
